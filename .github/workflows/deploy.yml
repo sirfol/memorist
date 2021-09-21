@@ -13,8 +13,7 @@ jobs:
       # Setup key
       - run: set -eu
       - run: mkdir "$HOME/.ssh"
-      - run: echo "$" > "$HOME/.ssh/KEY"
-      - run: cat "$HOME/.ssh/KEY"
+      - run: echo "${{ secrets.key }}" > "$HOME/.ssh/KEY"
       - run: chmod 600 "$HOME/.ssh/KEY"
       # Deploy
       - run: rsync -e "ssh -p 22 -i $HOME/.ssh/KEY -o StrictHostKeyChecking=no" --archive --compress --delete . administrator@nev.sirfol.ru:/var/www/memorist.xyz
