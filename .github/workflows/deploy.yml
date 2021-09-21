@@ -11,6 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       # Setup key
+      - shell: bash
         env:
           KEY: ${{ secrets.KEY }}
       - run: set -eu
