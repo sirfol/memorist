@@ -1,3 +1,8 @@
 .paper {
     background-image: url(media/background.jpg) !important;
 }
+@media (hover: none) and (pointer: coarse) {
+    body{
+      font-size: 22;
+    }
+  }
