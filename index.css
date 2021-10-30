@@ -1,8 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+* {
+  font-family: 'Merriweather', sans-serif;
+}
+body {
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 50px !important;
+}
 .paper {
     background-image: url(media/background.jpg) !important;
 }
-@media (hover: none) and (pointer: coarse) {
-    body{
-      font-size: 22;
-    }
+p {
+  font-size: 20;
+}
+@media (max-device-width: 1000px) {
+  H1 {
+    font-size: 50pt;
   }
+  p {
+    font-size: 30px;
+  }
+  #footer {
+    font-size: 25px;
+  }
+}
+#firstblock {
+  width: 100%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.25em;
+}
+#mainlabel {
+  width: 40%;
+  color: #333;
+  
+}
+#navdiv {
+  margin: 0;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+.navbtn {
+  margin: 15px;
+  text-decoration: none;
+  font-size: 30pt;
+  font-style: normal;
+  color: #333;
+  padding: 5px;
+}
+#contactbtn {
+  border: #333 2px solid;
+  border-radius: 15px;
+  font-size: 25pt;
+  margin: auto 15px;
+}
+#contactbtn:hover {
+  background-color: rgb(241, 231, 231);
+}
+#otherblocks {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.stadbox {
+  margin-top: 15px;
+  display: flex;
+  margin-bottom: 20 px;
+  
+}
+.stad {
+  width: 30%;
+  margin: auto;
+}
+#footer {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
