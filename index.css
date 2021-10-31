@@ -11,7 +11,7 @@ body {
 .paper {
     background-image: url(media/background.jpg) !important;
 }
-p {
+p, #firstblock a {
   font-size: 20;
 }
 @media (max-device-width: 1000px) {
@@ -19,6 +19,9 @@ p {
     font-size: 50pt;
   }
   p {
+    font-size: 30px;
+  }
+  #firstblock a {
     font-size: 30px;
   }
   #footer {
@@ -90,4 +93,13 @@ p {
   width: 100%;
   position: fixed;
   bottom: 0;
+}
+#demoLink{
+  color: #333;
+  background-color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 15px;
+  margin-top: 15px;
+
 }
